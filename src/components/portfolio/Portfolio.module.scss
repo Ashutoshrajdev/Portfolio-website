@@ -1,0 +1,68 @@
+@import '../../styles/contants.scss';
+
+.wrapper {
+    background: #fff;
+    overflow: hidden;
+
+    .container {
+        flex-direction: column;
+        gap: 2rem;
+
+        .heading {
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+
+            >:nth-child(2) {
+                text-decoration: underline;
+                color: orange;
+                cursor: pointer;
+            }
+        }
+
+        .showCase {
+            display: flex;
+            width: 100%;
+            gap: 1.5rem;
+            // justify-content: space-between;
+            flex-wrap: wrap;
+
+            >a {
+                @media (max-width: $sm) {
+                    width: 100%;
+
+                }
+                
+
+                border-radius: 20px;
+                max-width: 22rem;
+                box-shadow: 0px 21px 13px rgba(0, 0, 0, 13%);
+                cursor: pointer;
+
+                a:nth-child(2){
+                    height: 555px;
+        
+                   }
+            }
+
+            >img {
+                @media (max-width: $sm) {
+                    width: 100%;
+
+                }
+   
+
+                border-radius: 20px;
+                max-width: 22rem;
+                box-shadow: 0px 21px 13px rgba(0, 0, 0, 13%);
+                cursor: pointer;
+                height: 355px;
+
+width: 555px;
+              
+            }
+          
+        }
+    }
+}
